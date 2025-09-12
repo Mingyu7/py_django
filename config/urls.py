@@ -22,7 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # 기본 주소('/')로 접속하면 'pybo' 앱의 페이지로 바로 연결
     path('', include('pybo.urls')),
-    path('pybo/', include('pybo.urls')),
     path('', views.index, name='index'),  # /  페이지에 해당하는 urlpattern
     path('common/',include('common.urls'))
 ]
